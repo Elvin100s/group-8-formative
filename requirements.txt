@@ -8,3 +8,5 @@ librosa
 soundfile
 joblib
 nbformat
+nbclient
+ipykernel
