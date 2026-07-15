@@ -7,6 +7,3 @@ venv/
 
 # local archive of the project, not part of the repo
 formative2.zip
-
-# keep pipeline scripts local only
-scripts/
