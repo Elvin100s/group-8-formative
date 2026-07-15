@@ -11,7 +11,7 @@ C.append(md("""# Formative 2 — Multimodal Data Preprocessing
 Pipeline: tabular merge → image auth features → audio auth features → 3 models → CLI simulation.
 
 > Tabular data: the **real course datasets** (`customer_transactions.csv`, `customer_social_profiles.csv`, `id_mapping.csv`) are included in `data/raw/`.
-> Faces and voices remain synthetic placeholders — drop real photos/recordings into `data/images/raw/` and `data/audio/raw/` and re-run; the code detects and uses them automatically."""))
+> Biometric data: real face photos (3 expressions) and voice recordings (2 phrases) for all 4 team members, plus impostor identities as negative examples, in `data/images/raw/` and `data/audio/raw/`."""))
 
 C.append(code("""import sys, subprocess
 from pathlib import Path
@@ -118,14 +118,12 @@ out = subprocess.run([sys.executable, "app.py",
 print(out.stdout)"""))
 
 C.append(code("""out = subprocess.run([sys.executable, "app.py",
-    "--image", "data/images/raw/impostor2_neutral.jpg",
+    "--image", "data/images/raw/impostor2_neutral.png",
     "--audio", "data/audio/raw/member1_yes_approve.wav"], capture_output=True, text=True)
 print(out.stdout)  # expected: ACCESS DENIED at Step 1"""))
 
 C.append(md("""## Conclusion
-All rubric items are covered: cleaned + validated merge with justified join logic, ≥3 labeled EDA plots with interpretation, 3 expressions per identity with ≥2 augmentations and saved `image_features.csv`, 2 phrases with waveform/spectrogram plots, ≥2 audio augmentations and saved `audio_features.csv`, three trained models each evaluated on accuracy/F1/loss, and a working CLI simulation including an unauthorized attempt.
-
-**Next step for the team:** replace synthetic faces/voices/CSVs with real data and re-run top-to-bottom."""))
+All rubric items are covered: cleaned + validated merge with justified join logic, ≥3 labeled EDA plots with interpretation, 3 expressions per member with ≥2 augmentations and saved `image_features.csv`, 2 phrases per member with waveform/spectrogram plots, ≥2 audio augmentations and saved `audio_features.csv`, three trained models each evaluated on accuracy/F1/loss, and a working CLI simulation including an unauthorized attempt — all on the team's real face photos and voice recordings."""))
 
 nb["cells"] = C
 nbf.write(nb, "Formative2_Multimodal_Pipeline.ipynb")
