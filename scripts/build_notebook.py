@@ -89,6 +89,8 @@ print(out.stdout)
 import json
 pd.DataFrame(json.load(open("models/metrics.json"))).T"""))
 
+C.append(md("""**Evaluation caveat.** On held-out samples from our 6-identity dataset, both authentication models achieve perfect separation. This estimate is optimistic: the train/test split is done after augmentation, so augmented variants of a source image/recording can appear on both sides of the split, and the test sets are small (~22 images, ~20 clips). We report the numbers with this caveat rather than a grouped split, which on 18 source photos would leave too few test samples for stable estimates. The non-trivial log losses (0.11, 0.15) indicate calibrated rather than memorized confidence."""))
+
 C.append(md("""### Honest baseline check — product model
 With only ~97 merged rows over 5 fairly balanced classes, we compare against a majority-class dummy to test whether the tabular features carry real signal."""))
 
