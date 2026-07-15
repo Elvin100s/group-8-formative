@@ -11,6 +11,7 @@ User Identity & Product Recommendation System: face recognition → voiceprint v
 ├── app.py                          # CLI simulation (Task 6)
 ├── Formative2_Multimodal_Pipeline.ipynb  # executed notebook, full narrative
 ├── scripts/
+│   ├── generate_data.py            # synthetic CSV fallback (skips itself; real data present)
 │   ├── data_merge.py               # Task 1: clean, merge, EDA, feature engineering
 │   ├── image_pipeline.py           # Task 2: collect, augment, extract → image_features.csv
 │   ├── audio_pipeline.py           # Task 3: collect, visualize, augment → audio_features.csv
@@ -54,4 +55,11 @@ python app.py --image data/images/raw/impostor2_neutral.png \
 `P(face authorized) ≥ 0.60` **AND** `P(voice authorized) ≥ 0.60` → product model runs; any failure → ACCESS DENIED.
 
 ## Team contributions
-- Member 1 — *(fill in per member once the group divides the work)*
+| Member | GitHub | Contributions |
+|---|---|---|
+| Elvin (member1) | @Elvin100s | Repo setup & architecture; Task 1 merge/EDA script; CLI app (Task 6); media normalization (WAV/JPG); impostor face images; pipeline execution & integration; docs |
+| Eddy (member2) | @Eddydev-ALU | Task 3 audio pipeline; notebook builder; repo hygiene; member2 photos & recordings; impostor2 recordings |
+| Larissa (member3) | @Larissa4-droid | Task 2 image pipeline; Task 4 model training & evaluation; member3 photos & recordings; impostor3 recordings |
+| Herine (member4) | @h-mutumwinka | data_merge & generate_data scripts; member4 photos & recordings; impostor4 recordings |
+
+Individual work is verifiable in the [commit history](https://github.com/Elvin100s/group-8-formative/commits/main).
