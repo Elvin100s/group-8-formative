@@ -1,0 +1,10 @@
+pandas
+numpy
+scikit-learn
+matplotlib
+opencv-python-headless
+Pillow
+librosa
+soundfile
+joblib
+nbformat
