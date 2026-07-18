@@ -59,9 +59,9 @@ python app.py --image data/images/raw/impostor2_neutral.png \
 ## Team contributions
 | Member | GitHub | Contributions |
 |---|---|---|
-| Elvin Cyubahiro (member1) | @Elvin100s | Repo setup & architecture; Task 1 merge/EDA script; CLI app (Task 6); media normalization (WAV/JPG); impostor face images; pipeline execution & integration; docs |
-| Eddy Irasetsa (member2) | @Eddydev-ALU | Task 3 audio pipeline; notebook builder; repo hygiene; member2 photos & recordings; impostor2 recordings |
-| Iriza Larissa (member3) | @Larissa4-droid | Task 2 image pipeline; Task 4 model training & evaluation; member3 photos & recordings; impostor3 recordings |
-| Mutumwinka Heroine (member4) | @h-mutumwinka | data_merge & generate_data scripts; member4 photos & recordings; impostor4 recordings |
+| Elvin Cyubahiro (member1) | @Elvin100s | Repo setup & architecture; Task 1 merge/EDA script; CLI app (Task 6); media normalization (WAV/JPG); impostor face images; pipeline execution & integration; report compilation & fact checking; docs |
+| Eddy Irasetsa (member2) | @Eddydev-ALU | Task 3 audio pipeline; notebook builder; repo hygiene; demo video recording; member2 photos & recordings; impostor2 recordings |
+| Iriza Larissa (member3) | @Larissa4-droid | Task 2 image pipeline; Task 4 model training & evaluation; report writing & review; member3 photos & recordings; impostor3 recordings |
+| Mutumwinka Heroine (member4) | @h-mutumwinka | data_merge & generate_data scripts; EDA write-up; member4 photos & recordings; impostor4 recordings |
 
 Individual work is verifiable in the [commit history](https://github.com/Elvin100s/group-8-formative/commits/main).

@@ -167,10 +167,10 @@ The app also handles bad input gracefully: missing files, untrained models and a
 
 | Member | GitHub | Contributions |
 |---|---|---|
-| Elvin Cyubahiro | @Elvin100s | Repository setup and architecture; Task 1 merge and EDA script; CLI app (Task 6); media normalization to WAV/JPG; impostor face images; pipeline execution and integration; documentation |
-| Eddy Irasetsa | @Eddydev-ALU | Task 3 audio pipeline; notebook builder; repository hygiene; member2 photos and recordings; impostor2 recordings |
-| Iriza Larissa | @Larissa4-droid | Task 2 image pipeline; Task 4 model training and evaluation; member3 photos and recordings; impostor3 recordings |
-| Mutumwinka Heroine | @h-mutumwinka | Data merge and data generation scripts; member4 photos and recordings; impostor4 recordings |
+| Elvin Cyubahiro | @Elvin100s | Repository setup and architecture; Task 1 merge and EDA script; CLI app (Task 6); media normalization to WAV/JPG; impostor face images; pipeline execution and integration; report compilation and fact checking; documentation |
+| Eddy Irasetsa | @Eddydev-ALU | Task 3 audio pipeline; notebook builder; repository hygiene; demo video recording; member2 photos and recordings; impostor2 recordings |
+| Iriza Larissa | @Larissa4-droid | Task 2 image pipeline; Task 4 model training and evaluation; report writing and review; member3 photos and recordings; impostor3 recordings |
+| Mutumwinka Heroine | @h-mutumwinka | Data merge and data generation scripts; EDA write-up; member4 photos and recordings; impostor4 recordings |
 
 Individual work is verifiable in the commit history: https://github.com/Elvin100s/group-8-formative/commits/main
 
