@@ -91,7 +91,7 @@ def main():
     face_model, face_cols = load("face_model.joblib")
     f = image_features(Path(args.image))
     if not check(face_model, face_cols, f, "Face"):
-        print("\n*** ACCESS DENIED — face not recognized. ***")
+        print("\n*** ACCESS DENIED - face not recognized. ***")
         sys.exit(1)
 
     # ---- Step 2: voiceprint verification ----
@@ -99,7 +99,7 @@ def main():
     voice_model, voice_cols = load("voice_model.joblib")
     a = audio_features(Path(args.audio))
     if not check(voice_model, voice_cols, a, "Voice"):
-        print("\n*** ACCESS DENIED — voice not approved. ***")
+        print("\n*** ACCESS DENIED - voice not approved. ***")
         sys.exit(1)
 
     # ---- Step 3: product recommendation ----
