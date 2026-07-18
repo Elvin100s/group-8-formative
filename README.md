@@ -1,6 +1,8 @@
 # Formative 2 — Multimodal Data Preprocessing
 User Identity & Product Recommendation System: face recognition → voiceprint verification → product recommendation, with ACCESS DENIED pathways on any failed step.
 
+**Demo video:** https://youtu.be/5quay27JCxw
+
 ## Data
 - **Tabular:** course datasets (`customer_transactions.csv`, `customer_social_profiles.csv`, `id_mapping.csv`) in `data/raw/`.
 - **Images:** 3 expressions (neutral / smiling / surprised) per team member + 2 impostor identities, in `data/images/raw/`.
