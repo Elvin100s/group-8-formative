@@ -1,5 +1,5 @@
-# Formative 2 — Multimodal Data Preprocessing
-User Identity & Product Recommendation System: face recognition → voiceprint verification → product recommendation, with ACCESS DENIED pathways on any failed step.
+# Formative 2 - Multimodal Data Preprocessing
+User Identity & Product Recommendation System: face recognition -> voiceprint verification -> product recommendation, with ACCESS DENIED pathways on any failed step.
 
 **Demo video:** https://youtu.be/5quay27JCxw
 
@@ -15,9 +15,9 @@ User Identity & Product Recommendation System: face recognition → voiceprint v
 ├── scripts/
 │   ├── generate_data.py            # synthetic CSV fallback (skips itself; real data present)
 │   ├── data_merge.py               # Task 1: clean, merge, EDA, feature engineering
-│   ├── image_pipeline.py           # Task 2: collect, augment, extract → image_features.csv
-│   ├── audio_pipeline.py           # Task 3: collect, visualize, augment → audio_features.csv
-│   ├── train_models.py             # Task 4: 3 models + accuracy/F1/loss → models/
+│   ├── image_pipeline.py           # Task 2: collect, augment, extract -> image_features.csv
+│   ├── audio_pipeline.py           # Task 3: collect, visualize, augment -> audio_features.csv
+│   ├── train_models.py             # Task 4: 3 models + accuracy/F1/loss -> models/
 │   └── build_notebook.py           # regenerates the notebook
 ├── data/
 │   ├── raw/                        # source CSVs
@@ -51,15 +51,15 @@ python app.py --image data/images/raw/impostor2_neutral.png \
 |---|---|---|---|
 | Face recognition (RandomForest) | 1.00 | 1.00 | 0.11 |
 | Voiceprint verification (LogReg) | 1.00 | 1.00 | 0.15 |
-| Product recommendation (RandomForest) | 0.20 | 0.19 | 1.62 — does not beat majority baseline (0.25); dataset carries no product signal, documented honestly in notebook |
+| Product recommendation (RandomForest) | 0.20 | 0.19 | 1.62, does not beat majority baseline (0.25); dataset carries no product signal, documented honestly in notebook |
 
 ## Multimodal decision logic
-`P(face authorized) ≥ 0.60` **AND** `P(voice authorized) ≥ 0.60` → product model runs; any failure → ACCESS DENIED.
+`P(face authorized) >= 0.60` **AND** `P(voice authorized) >= 0.60` -> product model runs; any failure -> ACCESS DENIED.
 
 ## Team contributions
 | Member | GitHub | Contributions |
 |---|---|---|
-| Elvin Cyubahiro (member1) | @Elvin100s | Repo setup & architecture; Task 1 merge/EDA script; CLI app (Task 6); media normalization (WAV/JPG); impostor face images; pipeline execution & integration; report compilation & fact checking; docs |
+| Elvin Cyubahiro (member1) | @Elvin100s | Repo setup & architecture; Task 1 merge/EDA script; CLI app (Task 6); media normalization (WAV/JPG); impostor face images; pipeline execution & integration; report compilation; docs |
 | Eddy Irasetsa (member2) | @Eddydev-ALU | Task 3 audio pipeline; notebook builder; repo hygiene; demo video recording; member2 photos & recordings; impostor2 recordings |
 | Iriza Larissa (member3) | @Larissa4-droid | Task 2 image pipeline; Task 4 model training & evaluation; report writing & review; member3 photos & recordings; impostor3 recordings |
 | Mutumwinka Heroine (member4) | @h-mutumwinka | data_merge & generate_data scripts; EDA write-up; member4 photos & recordings; impostor4 recordings |
