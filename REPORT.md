@@ -4,9 +4,9 @@
 
 **Team:** Elvin Cyubahiro, Eddy Irasetsa, Iriza Larissa, Mutumwinka Heroine
 
-**Repository:** https://github.com/Elvin100s/group-8-formative
+**Repository:** [github.com/Elvin100s/group-8-formative](https://github.com/Elvin100s/group-8-formative)
 
-**Simulation video:** https://youtu.be/5quay27JCxw
+**Simulation video:** [youtu.be/5quay27JCxw](https://youtu.be/5quay27JCxw)
 
 ---
 
@@ -172,7 +172,7 @@ The app also handles bad input gracefully: missing files, untrained models and a
 | Iriza Larissa | @Larissa4-droid | Task 2 image pipeline; Task 4 model training and evaluation; report writing and review; member3 photos and recordings; impostor3 recordings |
 | Mutumwinka Heroine | @h-mutumwinka | Data merge and data generation scripts; EDA write-up; member4 photos and recordings; impostor4 recordings |
 
-Individual work is verifiable in the commit history: https://github.com/Elvin100s/group-8-formative/commits/main
+Individual work is verifiable in the [commit history](https://github.com/Elvin100s/group-8-formative/commits/main).
 
 ## 10. Limitations and Future Work
 
